@@ -1,0 +1,29 @@
+﻿
+.container {
+    margin: 10em auto;
+    border: 3px solid;
+    max-width: 25%;
+    padding: 1em;
+}
+.center {
+    margin: auto;
+}
+
+input[type=button] {
+    margin: .25em;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    background-color: white;
+    border: solid black 2px;
+    width: 100%; 
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    display: inline;
+    max-width: 40%;
+}
+

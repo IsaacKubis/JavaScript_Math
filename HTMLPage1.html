@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="calc.css" />
+    
+    <title>Calculator</title>
+</head>
+<body>
+    <script src="Script1.js"></script>
+    <div class="container">
+        <div class="calc">
+            <div class="center">
+                <h1>Basic Calculator</h1>
+                <table>
+                    <tr>
+                        <td colspan="3"><input type="text" readonly id="result" /></td>
+                        <td><input type="button" value="c" onclick="clr()" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="7" onclick="dis('7')"></td>
+                        <td><input type="button" value="8" onclick="dis('8')"></td>
+                        <td><input type="button" value="9" onclick="dis('9')"></td>
+                        <td><input type="button" value="/" onclick="dis('/')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="4" onclick="dis('4')"></td>
+                        <td><input type="button" value="5" onclick="dis('5')"></td>
+                        <td><input type="button" value="6" onclick="dis('6')"></td>
+                        <td><input type="button" value="*" onclick="dis('*')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="1" onclick="dis('1')"></td>
+                        <td><input type="button" value="2" onclick="dis('2')"></td>
+                        <td><input type="button" value="3" onclick="dis('3')"></td>
+                        <td><input type="button" value="-" onclick="dis('-')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="0" onclick="dis('0')"></td>
+                        <td><input type="button" value="." onclick="dis('.')"></td>
+                        <td><input type="button" value="+" onclick="dis('+')"></td>
+                        <td><input type="button" value="=" onclick="solve()"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="randnum">
+            <h1>Random Number Generator</h1>
+            <div class="center">
+                <input type="number" readonly id="rand" value=""/>
+                <p>Please enter the minimum and maximum numbers</p>
+                <ul>
+                    <li><input type="number" value="" id="min" placeholder="Minimum" /></li>
+                    <li><input type="number" value="" id="max" placeholder="Maximum" /></li>
+                </ul>
+                <input type="button" value="Submit" onclick="rand()" />
+                <input type="button" value="Clear" onclick="clrrand()" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Remainder Calculator</h1>
+        <div>
+            <div class="remainder">
+                <p>Outputs</p>
+                <label for="q">Quotient: </label> 
+                <input type="number" readonly id="q" value="" /> <br />
+                <label for="r">Remainder: </label> 
+                <input type="number" readonly id="r" value="" />
+                <p>Inputs</p>
+                <label for="d">Dividend: </label> 
+                <input type="number" value="" id="d" /> <br />
+                <label for="di">Divisor: </label> 
+                <input type="number" value="" id="di" />            
+            </div>
+            <input type="button" value="Submit" onclick="r()" />
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <h1>Increment/Decrement</h1>
+            <input type="number" value="" id="inc/dec" />
+            <input type="button" value="Increment" onclick="inc()" />
+            <input type="button" value="Decrement" onclick="dec()" />
+        </div>
+    </div>
+
+</body>
+</html>
